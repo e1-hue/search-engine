@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Logo -->
+    <div class="header">
+      <img src="images\logo.png" alt="Search Logo" class="logo" />
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search-box" placeholder="What are you looking for?" onkeyup="performSearch()" />
+      <button onclick="fetchResults()">Search</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
